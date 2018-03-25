@@ -1,0 +1,12 @@
+
+words = %w( ls as all fall dads las gas alaskas alfalfa flasks salads salsas flags shall slash halls flash flask gaffs saga half flak alas has lag sad )
+
+(7..27).each do |i|
+  a = []
+  (i*2).times do |j|
+    a << words.shuffle.first
+  end
+
+  puts a.join(" ")
+end
+
